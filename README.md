@@ -1,8 +1,13 @@
 # Knowledge Repository
 A repository of papers and resources for research and knowledge consolidation.
 
+* [Physics Guided ML](#physics-guided-ml)
+* [Data Set Generation](#data-set-generation)
+* [Algorithms](#algorithms)
+* [Transfer Learning in Process Industry](#transfer-learning-in-process-industry)
 
-## General Info on Physics Guided ML
+
+## Physics Guided ML
 
 * [Review article on Physics-informed machine learning](https://www.nature.com/articles/s42254-021-00314-5.pdf).
 
@@ -12,7 +17,7 @@ To be read...
 
 * [Canonical Variate Dissimilarity Analysis for Process Incipient Fault Detection](https://ieeexplore.ieee.org/document/8304817)
 
-Generation of a simplified CSTR model that creates a simulation based data set of normal operation and fault-induced anomalous operation. Model is subsequently used to test different multivariate statistical process monitoring methods. Model and paper results have been recreated here.
+Generation of a simplified CSTR (Continuous Stirred Tank Reactor) model that creates a simulation based data set of normal operation and fault-induced anomalous operation. Model is subsequently used to test different multivariate statistical process monitoring methods. Model and paper results have been recreated here.
 
 * [A pulp mill benchmark problem for control: problem description](https://www.sciencedirect.com/science/article/pii/S0959152403000118?via%3Dihub)
 
@@ -24,7 +29,13 @@ This dataset contains several undesirable events related to subsea oil and gas p
 
 * [Open Industrial Data: Inspiring Innovation & Fueling Collaboration in the Oil & Gas Ecosystem ](https://openindustrialdata.com/media/1065/open-industrial-data-cognite-akerbp.pdf)
 
-Open Industrial Data is a data set that represents the first of four stages for compression of natural gas on the Valhall PH platform. The purpose of the gas train is to compress and treat the gas to meet the required export pressure and specification, with a total capacity of 4,06 MSm3/d (143 MMscf/d). The data set includes time series data, maintenance history, and Process & Instrumentation Diagrams (P&IDs) for Valhall’s first stage compressor and associated process equipment. This includes process equipment such as the suction cooler, suction scrubber, compressor and discharge coolers. 
+Open Industrial Data is a data set that represents the first of four stages for compression of natural gas on the Valhall PH platform. The purpose of the gas train is to compress and treat the gas to meet the required export pressure and specification, with a total capacity of 4,06 MSm3/d (143 MMscf/d). The data set includes time series data, maintenance history, and Process & Instrumentation Diagrams (P&IDs) for Valhall’s first stage compressor and associated process equipment. This includes process equipment such as the suction cooler, suction scrubber, compressor and discharge coolers.
+
+## Algorithms
+
+* [Measurement of free surface deformation in PIV images](https://iopscience.iop.org/article/10.1088/0957-0233/16/10/012/meta)
+
+A presentation of an anomaly detection algorithm that uses Studentized deleted residuals (from a polynomial regression curve) and the Bonferroni critical value to find outliers. Cool trick is presented that makes use of the projection matrix so as to avoid having to refit each data point. Algorithm is recreated on a test data set under algorithms/t-res-anomaly-detector.ipynb. 
 
 ## Transfer Learning in Process Industry
 
