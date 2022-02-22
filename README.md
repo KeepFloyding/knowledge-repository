@@ -31,6 +31,27 @@ This dataset contains several undesirable events related to subsea oil and gas p
 
 Open Industrial Data is a data set that represents the first of four stages for compression of natural gas on the Valhall PH platform. The purpose of the gas train is to compress and treat the gas to meet the required export pressure and specification, with a total capacity of 4,06 MSm3/d (143 MMscf/d). The data set includes time series data, maintenance history, and Process & Instrumentation Diagrams (P&IDs) for Valhall’s first stage compressor and associated process equipment. This includes process equipment such as the suction cooler, suction scrubber, compressor and discharge coolers.
 
+## Simulation Based Inference (SBI)
+
+* [The frontier of simulation-based inference](https://www.pnas.org/content/117/48/30055)
+
+Simulators are poorly suited for statistical inference as the probability density (or likelihood) for a given observation is typically intractable. Such models are often referred to as implicit models and contrasted against prescribed models where the likelihood for an observation can be explicitly calculated. Two common traditional approaches rely on scientists to use their insight into the system to construct powerful summary statistics and then compare the observed data to the simulated data: probability density estimation and approximate Bayesian computation. New forces are causing there to be more development in this field:
+* Idea of active learning is catching on; i.e. incrementally guiding a simulator with Bayesian inference.
+* Also cross-pollination between simulators, machine learning and probablity modelling. 
+
+* [Benchmarking Simulation-Based Inference](https://arxiv.org/pdf/2101.04653.pdf)
+
+Paper provide a benchmark with inference tasks and suitable performance metrics. The goal of simulation-based inference (SBI), also known as ‘likelihood-free inference’, is to perform Bayesian inference without requiring numerical evaluation of the likelihood function. Difficult to compare between different approaches becauses tudies use different tasks and metrics for comparison. They conclude that the choice of performance metric is critical, the performance of
+the algorithms on some tasks leaves substantial room for improvement, sequential estimation generally improves sample efficiency. An important difference between algorithms is how new simulations are acquired: Sequential algorithms adaptively choose informative simulations to increase sample efficiency. Algorithms are:
+
+* REJ-ABC and SMC-ABC (Monte Carlo ABC) -> Monte Carlo Rejection Sampling
+* NLE and SNLE (Likelihood Estimation -> learn an approximation to the intractable likelihood
+* NPE and SNPE (Posterior Estimation) -> instead of approximating the likelihood, approaches target the posterior directly
+* NRE and SNRE (Ratio Estimation)  -> use classifiers to approximate density ratios
+
+The ‘gold standard’ would be to quantify the similarity between the true posterior and the inferred one with a suitable divergence measure on probability distributions.
+
+
 ## Algorithms
 
 * [Measurement of free surface deformation in PIV images](https://iopscience.iop.org/article/10.1088/0957-0233/16/10/012/meta)
