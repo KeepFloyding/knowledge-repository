@@ -1,11 +1,21 @@
 # Knowledge Repository
 A repository of papers and resources for research and knowledge consolidation.
 
+* [Engineering](#engineering)
 * [Physics Guided ML](#physics-guided-ml)
 * [Data Set Generation](#data-set-generation)
 * [Algorithms](#algorithms)
 * [Transfer Learning in Process Industry](#transfer-learning-in-process-industry)
 
+## Engineering
+
+* [Mathematical Modeling of Hybrid Renewable Energy System: A Review on Small Hydro-Solar-Wind Power Generation](https://link.springer.com/content/pdf/10.1007%2Fs40684-014-0021-4.pdf)
+
+Hybrid energy sources can be used to reduce the need for storage capacity and help mitigate intermittency.  Although an oversized hybrid system satisfies the load demand, it can be unnecessarily expensive. An undersized hybrid system is economical, but may not be able to meet the load demand. The optimal sizing of the renewable energy power system depends on the mathematical model of system components. Hybrid system has complex control system due to integration of two (or more) different power sources. The complexity of system increases with maximum power point tracking (MPPT) techniques employed in their subsystems. 
+
+* [Modelling of a Hydro Power Station in an Island Operation](https://ep.liu.se/ecp/132/055/ecp17132483.pdf) 
+
+* [Costing of a Small Hydropower Projects](http://www.ijetch.org/papers/357-P013.pdf)
 
 ## Physics Guided ML
 
