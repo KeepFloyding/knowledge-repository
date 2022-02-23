@@ -51,6 +51,13 @@ the algorithms on some tasks leaves substantial room for improvement, sequential
 
 The ‘gold standard’ would be to quantify the similarity between the true posterior and the inferred one with a suitable divergence measure on probability distributions.
 
+* [Accelerated Bayesian inference-based history matching of petroleum reservoirs using polynomial chaos expansions](https://www.tandfonline.com/doi/full/10.1080/17415977.2021.1973455)
+
+The traditional method employed in industry to perform history matching on reservoir simulations is based on manual selection of model parameters to match production history. Various methods to solve the inverse problems can be broadly classified into (i) deterministic methods and (ii) stochastic methods. A particular method can be classified as deterministic or stochastic depending upon the type of objective function of the inverse problem. To avoid the slow rate of convergence of the Genetic algorithms and the Evolutionary strategies, Bayesian inference (BI) based approaches have been developed in petroleum reservoir history matching. In BI, one starts with a prior distribution of model parameters, which is updated using the Bayes' rule, taking into account the production data, to get a posterior distribution of the model parameters. The most general method to implement BI is through the MCMC method, which is applicable to Gaussian and non-Gaussian prior distributions. However, due to the prohibitive computational cost of the MCMC method, computationally efficient approaches of performing Bayesian inference, such as the Ensemble Kalman Filter (ENKF), have been developed and such methods are based on various simplifying assumptions. The most commonly used methods to sample from the posterior distribution are the sequential Monte Carlo approach and the Markov Chain Monte Carlo (MCMC) method. The Bayesian inference along with MCMC is considered to be the standard method for history matching in reservoir modelling but it cannot be used directly for heavy reservoir simulation models due to the requirement of a large number of simulations which will be computationally expensive.
+
+It seems that they use a meta-model for the reservoir simulations with something that is known as PCE (polynomial chaos expansion). This is to avoid the sampling of costly simulations. 
+
+To read further...
 
 ## Algorithms
 
