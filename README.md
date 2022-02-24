@@ -9,6 +9,7 @@ A repository of papers and resources for research and knowledge consolidation.
 
 ## Engineering
 
+### Hydropower
 For hydropower, there are 2 main modes of delivery: Dams and run of river. 
 
 * [Mathematical Modeling of Hybrid Renewable Energy System: A Review on Small Hydro-Solar-Wind Power Generation](https://link.springer.com/content/pdf/10.1007%2Fs40684-014-0021-4.pdf)
@@ -30,6 +31,12 @@ The present paper intends to develop a correlation to determine the cost based o
 The general formula for any hydro system’s power output is given by P=ηρgQh where, P is the mechanical power produced at the turbine shaft (Watts), h is the hydraulic efficiency of the turbine, ρ is the density of water (kg/m3), g is the acceleration due to gravity (m/s2), Q is the volume flow rate passing through the
 turbine (m3/s), and h is the effective pressure head of water across the turbine (m). By using developed co-relation it has been found that the cost
 of the electro-mechanical equipment decreases with increase in the head. This is because the size of the electro-mechanical equipment reduces with increase in the head. That is for high head small hydropower the cost of electro-mechanical equipment will be less as compared to the small head SHPs for the same capacity.
+
+* [Machine Learning for Hydropower Scheduling: State of the Art and Future Research Directions](https://www.sciencedirect.com/science/article/pii/S1877050920320925) 
+
+A review paper on how ML can be used for Hydropower applications. Normally the following techniques are used: Linear Regression, SVR, SVM, Clustering and ANN. The main goal is to do the following: Streamflow forecasting, hydropower consumption forecasting, reservoir inflow, hydropower generation projection, etc. 
+
+Good paper, to be read more. 
 
 ## Physics Guided ML
 
