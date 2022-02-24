@@ -9,13 +9,27 @@ A repository of papers and resources for research and knowledge consolidation.
 
 ## Engineering
 
+For hydropower, there are 2 main modes of delivery: Dams and run of river. 
+
 * [Mathematical Modeling of Hybrid Renewable Energy System: A Review on Small Hydro-Solar-Wind Power Generation](https://link.springer.com/content/pdf/10.1007%2Fs40684-014-0021-4.pdf)
 
 Hybrid energy sources can be used to reduce the need for storage capacity and help mitigate intermittency.  Although an oversized hybrid system satisfies the load demand, it can be unnecessarily expensive. An undersized hybrid system is economical, but may not be able to meet the load demand. The optimal sizing of the renewable energy power system depends on the mathematical model of system components. Hybrid system has complex control system due to integration of two (or more) different power sources. The complexity of system increases with maximum power point tracking (MPPT) techniques employed in their subsystems. 
 
-* [Modelling of a Hydro Power Station in an Island Operation](https://ep.liu.se/ecp/132/055/ecp17132483.pdf) 
+* [Modelling of a Hydro Power Station in an Island Operation](https://ep.liu.se/ecp/132/055/ecp17132483.pdf)
+
+Representing a physical system of a hydropower plant by mathematical models can serve as a powerful tool for analysing and predicting the system performance during disturbances.  The main simulation scenarios of interest were: 20% load rejection, worst-case scenario of full shut-down and pressure rise in the pressure shaft due to the water hammer effect. Around 70% of Iceland’s electricity is produced from hydroelectric power and is the world’s largest electricity producer per capita. The load rejection simulation was constructed by a 20% sudden load rejection. This scenario is trying to imitate the incidence when there is a power shut-down, e.g.,, a shut-down of a large factory. The water hammer effect is particularly of interest for two reasons: There have been incidents where the pressure on the bottom of the pressure shaft raised above the pressure threshold of the pipe’s material, resulting in an outburst. Second reason is
+the lack of surge tank in the power system. The objective of the surge tank is to absorb the pressure and therefore take care of the sudden pressure rise in the pressure shaft, like has been stated. I'm not sure what the conclusion is here.... 
+
+![image](https://user-images.githubusercontent.com/29730122/155560068-d2fe0c0d-0042-4440-b0fc-2c1f2e2809ea.png)
+
+The present paper intends to develop a correlation to determine the cost based on the influencing parameters such as power and head. An attempt has been made to develop the trend of the cost of electromechanical equipment with the increase in head of the hydropower plant.  Small hydro technology is extremely robust (systems can last for 50 years or more with little maintenance) and is also one of the most environmentally benign energy technologies available. 
+
 
 * [Costing of a Small Hydropower Projects](http://www.ijetch.org/papers/357-P013.pdf)
+
+The general formula for any hydro system’s power output is given by P=ηρgQh where, P is the mechanical power produced at the turbine shaft (Watts), h is the hydraulic efficiency of the turbine, ρ is the density of water (kg/m3), g is the acceleration due to gravity (m/s2), Q is the volume flow rate passing through the
+turbine (m3/s), and h is the effective pressure head of water across the turbine (m). By using developed co-relation it has been found that the cost
+of the electro-mechanical equipment decreases with increase in the head. This is because the size of the electro-mechanical equipment reduces with increase in the head. That is for high head small hydropower the cost of electro-mechanical equipment will be less as compared to the small head SHPs for the same capacity.
 
 ## Physics Guided ML
 
