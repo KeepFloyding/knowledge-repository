@@ -12,6 +12,9 @@ A repository of papers and resources for research and knowledge consolidation.
 ### Hydropower
 For hydropower, there are 2 main modes of delivery: Dams and run of river. 
 
+![image](https://user-images.githubusercontent.com/29730122/155703153-a25299a7-a548-426e-9ea8-95e2ec0ec06e.png)
+
+
 * [Mathematical Modeling of Hybrid Renewable Energy System: A Review on Small Hydro-Solar-Wind Power Generation](https://link.springer.com/content/pdf/10.1007%2Fs40684-014-0021-4.pdf)
 
 Hybrid energy sources can be used to reduce the need for storage capacity and help mitigate intermittency.  Although an oversized hybrid system satisfies the load demand, it can be unnecessarily expensive. An undersized hybrid system is economical, but may not be able to meet the load demand. The optimal sizing of the renewable energy power system depends on the mathematical model of system components. Hybrid system has complex control system due to integration of two (or more) different power sources. The complexity of system increases with maximum power point tracking (MPPT) techniques employed in their subsystems. 
@@ -37,6 +40,15 @@ of the electro-mechanical equipment decreases with increase in the head. This is
 A review paper on how ML can be used for Hydropower applications. Normally the following techniques are used: Linear Regression, SVR, SVM, Clustering and ANN. The main goal is to do the following: Streamflow forecasting, hydropower consumption forecasting, reservoir inflow, hydropower generation projection, etc. 
 
 Good paper, to be read more. 
+
+* [Comparative study of forecasting approaches in monthly streamflow series from Brazilian hydroelectric plants using Extreme Learning Machines and Box & Jenkins models](https://sciendo.com/pdf/10.2478/johh-2021-0001)
+
+Accurate monthly streamflow predictions are essential for water resources management for decisions related to the operation of the energy matrix of a country, the planning of hydropower generation, flood control, and water supply, among others. In this sense, this work performed an investigation on the use of forecasting approaches techniques for monthly streamflow series. We focused on analyzing the use of monthly versus annual approaches, as well as the adoption of the direct versus recursive methods to multistep prediction. The main findings were:
+
+* The computational results indicated that the use of the direct approach (as opposed to the recursive approach for multi-step) led to most of the best performances;
+* The monthly method overcame to the annual methodology in most cases;
+* The monthly recursive prediction achieved the best errors to all multistep tasks, to the series in which the coefficient of variation is higher than 2;
+* The ELM (Exterme Learning Machine) have reached the best overall performances in comparison to AR (Auto-regressive) and PAR (Periodic Auto-regressive). It also presented a low computational cost to be adjusted; 
 
 ## Physics Guided ML
 
@@ -95,6 +107,27 @@ To read further...
 * [Measurement of free surface deformation in PIV images](https://iopscience.iop.org/article/10.1088/0957-0233/16/10/012/meta)
 
 A presentation of an anomaly detection algorithm that uses Studentized deleted residuals (from a polynomial regression curve) and the Bonferroni critical value to find outliers. Cool trick is presented that makes use of the projection matrix so as to avoid having to refit each data point. Algorithm is recreated on a test data set under algorithms/t-res-anomaly-detector.ipynb. 
+
+* [Online Steady-State Detection for Process Control Using Multiple Change-Point Models and Particle Filters](http://imse.utep.edu/mdasi/paper/paper4.pdf)
+
+We proposed a robust online steady-state detection algorithm using multiple change-point model and particle filtering techniques. The goal of this method is to sequentially fit a piecewise linear model to a given time series. Particle filtering is well-proven to be able to estimate the parameters of a nonlinear system effectively. Commonly applied to object localization and tracking, the power of the particle filter comes in its ability to model parameter distributions that are non-Gaussian in nature. There are multiple different methods that have been used historically described as the offline and online methods. 
+
+Offline methods include:
+* Graphical methods such as visual inspection, CUSUM, exponentially weighted moving average and statistical process control method (SPC) models. 
+* Heuristic rules such as MSER and MSER-5
+* Statistical methods such as goodness-of-fit test and wavelet-based spectral method. 
+* Initialization bias tests such as batch-means-based tests [9], students-tests and compound test method. 
+* Hybrid methods which employ initialization bias tests in conjunction with graphical or heuristic approaches. Two methods of this type are the sequential method and the scale invariant truncation point method.
+
+Online methods include:
+* Slope detection method
+* Performing a t-test on two recently computed means of two adjacent windows with pooled standard-deviation
+* Monitoring the standard deviation of a moving window
+* Performing an F-test on the ratio of variances of a moving window calculated using two different methods, the mean-squared-deviation and the mean of squared differences of successive data
+
+These existing methods have certain limitations. One common disadvantage is that a data window has to be used. Too long a moving window may delay the detection while too short a moving window may increase the false detection rate. Another disadvantage is that the optimal detection parameters (i.e., window size, threshold) often depend on the characteristics of signals
+
+Nice blog post about this can be found [here](https://medium.com/cognite/inso-insights-online-steady-state-detection-for-process-control-fae91567e560).
 
 ## Transfer Learning in Process Industry
 
