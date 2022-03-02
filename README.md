@@ -4,6 +4,7 @@ A repository of papers and resources for research and knowledge consolidation.
 * [Engineering](#engineering)
 * [Physics Guided ML](#physics-guided-ml)
 * [Data Set Generation](#data-set-generation)
+* [Simulation Based Inference](#simulation-based-inference)
 * [Algorithms](#algorithms)
 * [Transfer Learning in Process Industry](#transfer-learning-in-process-industry)
 
@@ -74,7 +75,7 @@ This dataset contains several undesirable events related to subsea oil and gas p
 
 Open Industrial Data is a data set that represents the first of four stages for compression of natural gas on the Valhall PH platform. The purpose of the gas train is to compress and treat the gas to meet the required export pressure and specification, with a total capacity of 4,06 MSm3/d (143 MMscf/d). The data set includes time series data, maintenance history, and Process & Instrumentation Diagrams (P&IDs) for Valhall’s first stage compressor and associated process equipment. This includes process equipment such as the suction cooler, suction scrubber, compressor and discharge coolers.
 
-## Simulation Based Inference (SBI)
+## Simulation Based Inference
 
 * [The frontier of simulation-based inference](https://www.pnas.org/content/117/48/30055)
 
@@ -101,6 +102,10 @@ The traditional method employed in industry to perform history matching on reser
 It seems that they use a meta-model for the reservoir simulations with something that is known as PCE (polynomial chaos expansion). This is to avoid the sampling of costly simulations. 
 
 To read further...
+
+* [Approximate Bayesian computation scheme for parameter inference and model selection in dynamical systems](https://www.researchgate.net/publication/23995500_Toni_T_Welch_D_Strelkowa_N_Ipsen_A_Stumpf_MPApproximate_Bayesian_computation_scheme_for_parameter_inference_and_model_selection_in_dynamical_systems_J_R_Soc_Interface_6_187-202) 
+
+Approximate Bayesian computation (ABC) methods can be used to evaluate posterior distributions without having to calculate likelihoods. In this paper, we discuss and apply an ABC method based on sequential Monte Carlo (SMC) to estimate parameters of dynamical models. 
 
 ## Algorithms
 
