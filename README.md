@@ -107,6 +107,10 @@ To read further...
 
 Approximate Bayesian computation (ABC) methods can be used to evaluate posterior distributions without having to calculate likelihoods. In this paper, we discuss and apply an ABC method based on sequential Monte Carlo (SMC) to estimate parameters of dynamical models. Traditional ABC methods (ABC rejection sampler) sample a parameter from the prior and use it to generate simulated data. If the agreement between simulated and experimental data is below a certain tolerance threshold, then that value for the parameter is rejected, otherwise it is used to update the posterior accordingly. The trouble with this method is that it can be expensive and slow to run if the prior distribution is a poor approximation to the true value. Thus there are alternative methods that are used such as MCMC (Markov Chain Monte Carlo) ABC models which have a proposal distribution for the parameters that can be used to alter the value of the parameter if there is a rejection. The authors in this paper propose an alternative which is known as ABC SMC (Sequential Monte Carlo) which is a little bit more complicated (it involves propogating the parameter through a series of intermediate distributions). They test their algorithm against several well known dynamical systems such as the Lotka-Volterra equations (deterministic and stochastic) and SIR (Susceptible, infectious and recovered) models.
 
+* [Automatic Posterior Transformation for Likelihood-free Inference](https://arxiv.org/pdf/1905.07488.pdf)
+
+ABC methods for SBI can suffer from the curse of dimensionality when a large number of summary statistics are used to compute the distance function. Posterior Estimation methods can surpass this by targeting the posterior directly.
+
 ## Algorithms
 
 * [Measurement of free surface deformation in PIV images](https://iopscience.iop.org/article/10.1088/0957-0233/16/10/012/meta)
