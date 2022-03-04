@@ -1,94 +1,12 @@
 # Knowledge Repository
 A repository of papers and resources for research and knowledge consolidation.
 
-* [Engineering](#engineering)
+* [Engineering](https://github.com/KeepFloyding/knowledge-repository/engineering)
 * [Physics Guided ML](#physics-guided-ml)
 * [Data Set Generation](#data-set-generation)
 * [Simulation Based Inference](#simulation-based-inference)
 * [Algorithms](#algorithms)
 * [Transfer Learning in Process Industry](#transfer-learning-in-process-industry)
-
-## Engineering
-
-### Hydropower
-For hydropower, there are 2 main modes of delivery: Dams and run of river. 
-
-![image](https://user-images.githubusercontent.com/29730122/155703153-a25299a7-a548-426e-9ea8-95e2ec0ec06e.png)
-
-* [Utility of CFD in the design and performance analysis of hydraulic turbines — A review](https://www.sciencedirect.com/science/article/pii/S2352484720312920)
-
-* [Priority analysis for risk factors of equipment in a hydraulic turbine generator unit](https://www.sciencedirect.com/science/article/abs/pii/S0950423018305163)
-
-* [Multiaxial fatigue analysis for the shaft of a 100 MW hydro-power generator](https://journal.ump.edu.my/jmes/article/view/1533)
-
-* [A Methodology for Protective Vibration Monitoring of Hydropower Units Based on the Mechanical Properties](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3707184/)
-
-* [Vibration management in the hydropower industry](https://energiforskmedia.blob.core.windows.net/media/25312/hydro_nasselqvist.pdf)
-
-* [Sources of vibration and their treatment in hydro power stations-A review](https://www.sciencedirect.com/science/article/pii/S2215098616304815)
-
-* [The Effect of Flowing Water on Turbine Rotor Vibrations](http://www.diva-portal.org/smash/get/diva2:990490/FULLTEXT01.pdf)
-
-* [Investigation of Pressure Fluctuation and Pulsating Hydraulic Axial Thrust in Francis Turbines](https://www.mdpi.com/1996-1073/13/7/1734/htm)
-
-To date, a miscellaneous assortment of hydraulic turbines has been designed to operate reliably and efficiently under different conditions of head and discharge at the actual site. Due to desirable advantages, such as a wide operating range and high efficiency, Francis turbines are widely used compared to other types of hydraulic turbines. With the advantage being able to regulate operating conditions for a rather low cost and short time, Francis turbines are able to meet real-time electricity demands and, thus, are frequently employed to stabilize power grid operation. However, Francis turbines are generally designed to operate at the best efficiency points (BEPs) and, theoretically, the flow leaving the runner is almost axial, with little swirl entering the draft tube. Francis turbines are inevitably operated from a partial to full load for the sake of accommodating the real-time demand of end-users, which is likely to bring about unfavorable issues that undermine hydraulic stability, including Karman vortex at the trailing edge of guide vanes, blade channel vortices, and helical vortex rope in the draft tube [10,11]. In addition, being one of the crucial factors in hydraulic stability, hydraulic axial thrust represents severe fluctuations and poses a great threat to the bearing and powerhouse structure under off-design conditions.
-
-Over the last several decades, both experiments and numerical simulations have been performed to investigate flow instabilities as well as the induced pressure fluctuations inside Francis turbines. Arpe et al. presented a detailed experimental study about the unstable pressure field that developed under low-discharge operating conditions within the elbow-type draft tube of a high specific speed Francis turbine.
-
-* [The Prediction Method on the Early Failure of Hydropower Units Based on Gaussian Process Regression Driven by Monitoring Data](https://www.mdpi.com/2076-3417/11/1/153)
-
-This paper proposes a prediction method for the early failure of hydropower units based on Gaussian process regression (GPR). Firstly, by studying the correlation between different monitoring data, nine state parameters closely related to the operation of hydropower units are mined from the massive data. A condition monitoring directive based on the Mahalanobis distance (MD) is designed. Methods such as EMD (Empiral Mode Decomposition), VMD (Variational Mode Decomposition), and wavelet analysis are commonly used to decompose the vibration signal to remove the high-frequency noise in the original signal, to extract the typical characteristic frequency corresponding to different faults of the units. However, in the existing literature, the selection of state parameters often depends on
-human experience, and the correlation between state parameters is not fully considered.Firstly, the paper uses the Pearson correlation coefficient (PCC), maximum information coefficient (MIC), and grey correlation degree (GCD) to select the appropriate operation state parameters from the massive data stored in the hydropower unit’s system to construct the input eigenvector. Then the relevant multi-dimensional information is fully used to establish the health assessment of the hydropower units based on the GPR model using the historical data of no-fault records at the beginning of the unit operation. 
-
-For feature selection, the active power information of the hydropower units is used to evaluate the operation state of the hydropower units. Therefore, when selecting the monitoring parameters, the parameters closely related to the active power are mainly selected. Using a bunch of correlations, they establish the following rules for parameter selection
-
-![image](https://user-images.githubusercontent.com/29730122/156750905-cebd3068-817a-4271-aa6f-8b1136d620db.png)
-
-They use these variables for their GPR model which is regressed against active power. 
-
-
-* [Mathematical Modeling of Hybrid Renewable Energy System: A Review on Small Hydro-Solar-Wind Power Generation](https://link.springer.com/content/pdf/10.1007%2Fs40684-014-0021-4.pdf)
-
-Hybrid energy sources can be used to reduce the need for storage capacity and help mitigate intermittency.  Although an oversized hybrid system satisfies the load demand, it can be unnecessarily expensive. An undersized hybrid system is economical, but may not be able to meet the load demand. The optimal sizing of the renewable energy power system depends on the mathematical model of system components. Hybrid system has complex control system due to integration of two (or more) different power sources. The complexity of system increases with maximum power point tracking (MPPT) techniques employed in their subsystems. 
-
-* [Modelling of a Hydro Power Station in an Island Operation](https://ep.liu.se/ecp/132/055/ecp17132483.pdf)
-
-Representing a physical system of a hydropower plant by mathematical models can serve as a powerful tool for analysing and predicting the system performance during disturbances.  The main simulation scenarios of interest were: 20% load rejection, worst-case scenario of full shut-down and pressure rise in the pressure shaft due to the water hammer effect. Around 70% of Iceland’s electricity is produced from hydroelectric power and is the world’s largest electricity producer per capita. The load rejection simulation was constructed by a 20% sudden load rejection. This scenario is trying to imitate the incidence when there is a power shut-down, e.g.,, a shut-down of a large factory. The water hammer effect is particularly of interest for two reasons: There have been incidents where the pressure on the bottom of the pressure shaft raised above the pressure threshold of the pipe’s material, resulting in an outburst. Second reason is
-the lack of surge tank in the power system. The objective of the surge tank is to absorb the pressure and therefore take care of the sudden pressure rise in the pressure shaft, like has been stated. I'm not sure what the conclusion is here.... 
-
-![image](https://user-images.githubusercontent.com/29730122/155560068-d2fe0c0d-0042-4440-b0fc-2c1f2e2809ea.png)
-
-The present paper intends to develop a correlation to determine the cost based on the influencing parameters such as power and head. An attempt has been made to develop the trend of the cost of electromechanical equipment with the increase in head of the hydropower plant.  Small hydro technology is extremely robust (systems can last for 50 years or more with little maintenance) and is also one of the most environmentally benign energy technologies available. 
-
-
-* [Costing of a Small Hydropower Projects](http://www.ijetch.org/papers/357-P013.pdf)
-
-The general formula for any hydro system’s power output is given by P=ηρgQh where, P is the mechanical power produced at the turbine shaft (Watts), h is the hydraulic efficiency of the turbine, ρ is the density of water (kg/m3), g is the acceleration due to gravity (m/s2), Q is the volume flow rate passing through the
-turbine (m3/s), and h is the effective pressure head of water across the turbine (m). By using developed co-relation it has been found that the cost
-of the electro-mechanical equipment decreases with increase in the head. This is because the size of the electro-mechanical equipment reduces with increase in the head. That is for high head small hydropower the cost of electro-mechanical equipment will be less as compared to the small head SHPs for the same capacity.
-
-* [Machine Learning for Hydropower Scheduling: State of the Art and Future Research Directions](https://www.sciencedirect.com/science/article/pii/S1877050920320925) 
-
-A review paper on how ML can be used for Hydropower applications. Normally the following techniques are used: Linear Regression, SVR, SVM, Clustering and ANN. The main goal is to do the following: Streamflow forecasting, hydropower consumption forecasting, reservoir inflow, hydropower generation projection, etc. 
-
-Good paper, to be read more. 
-
-* [Comparative study of forecasting approaches in monthly streamflow series from Brazilian hydroelectric plants using Extreme Learning Machines and Box & Jenkins models](https://sciendo.com/pdf/10.2478/johh-2021-0001)
-
-Accurate monthly streamflow predictions are essential for water resources management for decisions related to the operation of the energy matrix of a country, the planning of hydropower generation, flood control, and water supply, among others. In this sense, this work performed an investigation on the use of forecasting approaches techniques for monthly streamflow series. We focused on analyzing the use of monthly versus annual approaches, as well as the adoption of the direct versus recursive methods to multistep prediction. The main findings were:
-
-* The computational results indicated that the use of the direct approach (as opposed to the recursive approach for multi-step) led to most of the best performances;
-* The monthly method overcame to the annual methodology in most cases;
-* The monthly recursive prediction achieved the best errors to all multistep tasks, to the series in which the coefficient of variation is higher than 2;
-* The ELM (Exterme Learning Machine) have reached the best overall performances in comparison to AR (Auto-regressive) and PAR (Periodic Auto-regressive). It also presented a low computational cost to be adjusted; 
-
-* [Machine learning for condition monitoring in hydropower plants using a neural network](https://www.diva-portal.org/smash/get/diva2:1337399/FULLTEXT01.pdf)
-
-Many of the components in the system deteriorate during the service life of the turbine and if these deterioration become substantial it will lead to damage and breakdown. Oil leakage from the control system for a turbine has not only consequences as of downtime, but also an environmental impact. According to ˚Astrand, the oil leakage from turbines in Sweden is less than 100 liter per oil leakage occasion. But at single occasions; larger amounts of around 500-1000 liters are leaked out in connection to a breakdown. The hydraulic system consists of an oil storage tank, two pressure pumps, three accumulator
-tanks and the runner blade and GV serv. 
-
-![image](https://user-images.githubusercontent.com/29730122/156753094-fd51ba38-5e4f-453e-8d7d-60f9f758a7d9.png)
-
 
 ## Physics Guided ML
 
