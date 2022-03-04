@@ -1,9 +1,29 @@
-### Hydropower
+# Hydropower
+
+## Overview
 For hydropower, there are 2 main modes of delivery: Dams and run of river. 
 
 ![image](https://user-images.githubusercontent.com/29730122/155703153-a25299a7-a548-426e-9ea8-95e2ec0ec06e.png)
 
+## Literature Review
+
 * [Utility of CFD in the design and performance analysis of hydraulic turbines — A review](https://www.sciencedirect.com/science/article/pii/S2352484720312920)
+
+There is a need for CFD evaluation of hydraulic turbine performance for several reasons. This is primarily due to the fact that the stability of electric power network is at risk because of the stochastic and intermittent nature of such energy sources. In this context, hydropower plays an important role due to its unmatchable operating flexibility and capability of primary and secondary grid control by maintaining a balance between power generation and consumption. However, this makes the hydro units run at off design conditions very often. Planning and development of the power generation have been such that many of the hydro power plants work during peak load demands. Thus, most of the time, hydraulic turbines have to work away from their best efficiency point (BEP) unless it is designed for the peak load. It is to be noticed here that farther the operating point from the designed one, larger is the fluctuation in quantities like velocity and pressure in the turbine flow field. 
+
+At steady state regimes of operations, turbines are operated at constant values of head, discharge and speed, and forces acted during these operations are also constant in magnitude, direction and frequency. During transient state of operations (such as during start-ups, stops, synchronizing and load changing), forces are not constant but vary in magnitude, direction and frequency. Thus, hydraulic turbines are acted upon by various steady and unsteady forces during their off-design operations, and their nature and possible causes must be studied well before finalizing the design of the turbines.
+
+Hydraulic turbines are acted upon by various unsteady forces due to exciting hydrodynamic phenomena such as rotor–stator interaction (RSI), pressure fluctuations, eddy formation and vortex generation at critical locations of the turbine. RSI effects become more detrimental during the rotation of wicket gates for changing the operating point. This is due to the fact that the gap between the guide vanes and runner blades changes continuously during the guide vane rotation which in turn leads to frequent change in load on the blades and unstable pressure fluctuations.
+
+The off-design operations of these turbines cause many undesirable phenomena and restrict the operating range to an unacceptable limit. These restrictions further limit the usability of the turbine and keep the grid stability at stake. At off-design operations of Francis turbines, almost 60% of the total installed capacity is hindered because of disturbed complex flow structures through the machine depending on the operating conditions. Moreover, pressure fluctuation and mass oscillation cause unsteady phenomena like draft tube surges and stall during operations away from the rated conditions. 
+
+In fact, determination of efficiency and performance characteristics is one of the major objectives of investigations during design and analysis of hydraulic turbines. There are important parameters of water turbine like speed of rotation (n), discharge (Q), head (H), output power (N), efficiency (), turbine cavitation coefficient () and suction height (H). The curves which describe the turbine parameters and behavior are known as characteristic curves. 
+
+Hydraulic turbines are acted upon by various unsteady forces during operation which result in stress concentration at critical locations of the turbine space. These forces mainly depend on the type of machines and design of blade systems. Others reviewed four main failure mechanisms of hydraulic turbines: cavitation, erosion, fatigue and material failure. These damage mechanisms are assisted by the highly unsteady turbulent flow through the turbine space. There are various unsteady flow phenomena as rotor–stator interaction (RSI), fluid–structure interaction (FSI), channel vortex, full load instabilities, draft tube surge and free surface vortex which have direct impact on the hydraulic turbine structures. Due to the relative velocity between guide vanes and runner blades, a fluctuating pressure field is generated. Thus, the flow passage in between the guide vanes and runner blades is subjected to high frequency pressure variations which may set the runner in vibration mode. This phenomenon is called as the rotor–stator interaction (RSI).
+
+Consistent development of hydro power systems requires highly sophisticated modern hydraulic turbines having higher specific speeds that lead to less weight and dimensions of turbines which is indeed economical. Thus, selection of higher specific speed for a given head results in smaller turbine and generator sizes, but at the same time leads to high flow velocities causing higher energy losses along with the reduction of absolute pressure. Such flow conditions in hydraulic turbines may cause a phenomenon, cavitation. 
+
+Great resource!
 
 * [Priority analysis for risk factors of equipment in a hydraulic turbine generator unit](https://www.sciencedirect.com/science/article/abs/pii/S0950423018305163)
 
