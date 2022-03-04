@@ -21,7 +21,7 @@ For hydropower, there are 2 main modes of delivery: Dams and run of river.
 
 * [Multiaxial fatigue analysis for the shaft of a 100 MW hydro-power generator](https://journal.ump.edu.my/jmes/article/view/1533)
 
-* [A Methodology for Protective Vibration Monitoring of Hydropower Units Based on the Mechanical Properties (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3707184/)
+* [A Methodology for Protective Vibration Monitoring of Hydropower Units Based on the Mechanical Properties](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3707184/)
 
 * [Vibration management in the hydropower industry](https://energiforskmedia.blob.core.windows.net/media/25312/hydro_nasselqvist.pdf)
 
