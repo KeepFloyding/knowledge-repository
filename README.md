@@ -15,6 +15,37 @@ For hydropower, there are 2 main modes of delivery: Dams and run of river.
 
 ![image](https://user-images.githubusercontent.com/29730122/155703153-a25299a7-a548-426e-9ea8-95e2ec0ec06e.png)
 
+* [Utility of CFD in the design and performance analysis of hydraulic turbines — A review](https://www.sciencedirect.com/science/article/pii/S2352484720312920)
+
+* [Priority analysis for risk factors of equipment in a hydraulic turbine generator unit](https://www.sciencedirect.com/science/article/abs/pii/S0950423018305163)
+
+* [Multiaxial fatigue analysis for the shaft of a 100 MW hydro-power generator](https://journal.ump.edu.my/jmes/article/view/1533)
+
+* [A Methodology for Protective Vibration Monitoring of Hydropower Units Based on the Mechanical Properties (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3707184/)
+
+* [Vibration management in the hydropower industry](https://energiforskmedia.blob.core.windows.net/media/25312/hydro_nasselqvist.pdf)
+
+* [Sources of vibration and their treatment in hydro power stations-A review](https://www.sciencedirect.com/science/article/pii/S2215098616304815)
+
+* [The Effect of Flowing Water on Turbine Rotor Vibrations](http://www.diva-portal.org/smash/get/diva2:990490/FULLTEXT01.pdf)
+
+* [Investigation of Pressure Fluctuation and Pulsating Hydraulic Axial Thrust in Francis Turbines](https://www.mdpi.com/1996-1073/13/7/1734/htm)
+
+To date, a miscellaneous assortment of hydraulic turbines has been designed to operate reliably and efficiently under different conditions of head and discharge at the actual site. Due to desirable advantages, such as a wide operating range and high efficiency, Francis turbines are widely used compared to other types of hydraulic turbines. With the advantage being able to regulate operating conditions for a rather low cost and short time, Francis turbines are able to meet real-time electricity demands and, thus, are frequently employed to stabilize power grid operation. However, Francis turbines are generally designed to operate at the best efficiency points (BEPs) and, theoretically, the flow leaving the runner is almost axial, with little swirl entering the draft tube. Francis turbines are inevitably operated from a partial to full load for the sake of accommodating the real-time demand of end-users, which is likely to bring about unfavorable issues that undermine hydraulic stability, including Karman vortex at the trailing edge of guide vanes, blade channel vortices, and helical vortex rope in the draft tube [10,11]. In addition, being one of the crucial factors in hydraulic stability, hydraulic axial thrust represents severe fluctuations and poses a great threat to the bearing and powerhouse structure under off-design conditions.
+
+Over the last several decades, both experiments and numerical simulations have been performed to investigate flow instabilities as well as the induced pressure fluctuations inside Francis turbines. Arpe et al. presented a detailed experimental study about the unstable pressure field that developed under low-discharge operating conditions within the elbow-type draft tube of a high specific speed Francis turbine.
+
+* [The Prediction Method on the Early Failure of Hydropower Units Based on Gaussian Process Regression Driven by Monitoring Data](https://www.mdpi.com/2076-3417/11/1/153)
+
+This paper proposes a prediction method for the early failure of hydropower units based on Gaussian process regression (GPR). Firstly, by studying the correlation between different monitoring data, nine state parameters closely related to the operation of hydropower units are mined from the massive data. A condition monitoring directive based on the Mahalanobis distance (MD) is designed. Methods such as EMD (Empiral Mode Decomposition), VMD (Variational Mode Decomposition), and wavelet analysis are commonly used to decompose the vibration signal to remove the high-frequency noise in the original signal, to extract the typical characteristic frequency corresponding to different faults of the units. However, in the existing literature, the selection of state parameters often depends on
+human experience, and the correlation between state parameters is not fully considered.Firstly, the paper uses the Pearson correlation coefficient (PCC), maximum information coefficient (MIC), and grey correlation degree (GCD) to select the appropriate operation state parameters from the massive data stored in the hydropower unit’s system to construct the input eigenvector. Then the relevant multi-dimensional information is fully used to establish the health assessment of the hydropower units based on the GPR model using the historical data of no-fault records at the beginning of the unit operation. 
+
+For feature selection, the active power information of the hydropower units is used to evaluate the operation state of the hydropower units. Therefore, when selecting the monitoring parameters, the parameters closely related to the active power are mainly selected. Using a bunch of correlations, they establish the following rules for parameter selection
+
+![image](https://user-images.githubusercontent.com/29730122/156750905-cebd3068-817a-4271-aa6f-8b1136d620db.png)
+
+They use these variables for their GPR model which is regressed against active power. 
+
 
 * [Mathematical Modeling of Hybrid Renewable Energy System: A Review on Small Hydro-Solar-Wind Power Generation](https://link.springer.com/content/pdf/10.1007%2Fs40684-014-0021-4.pdf)
 
@@ -50,6 +81,14 @@ Accurate monthly streamflow predictions are essential for water resources manage
 * The monthly method overcame to the annual methodology in most cases;
 * The monthly recursive prediction achieved the best errors to all multistep tasks, to the series in which the coefficient of variation is higher than 2;
 * The ELM (Exterme Learning Machine) have reached the best overall performances in comparison to AR (Auto-regressive) and PAR (Periodic Auto-regressive). It also presented a low computational cost to be adjusted; 
+
+* [Machine learning for condition monitoring in hydropower plants using a neural network](https://www.diva-portal.org/smash/get/diva2:1337399/FULLTEXT01.pdf)
+
+Many of the components in the system deteriorate during the service life of the turbine and if these deterioration become substantial it will lead to damage and breakdown. Oil leakage from the control system for a turbine has not only consequences as of downtime, but also an environmental impact. According to ˚Astrand, the oil leakage from turbines in Sweden is less than 100 liter per oil leakage occasion. But at single occasions; larger amounts of around 500-1000 liters are leaked out in connection to a breakdown. The hydraulic system consists of an oil storage tank, two pressure pumps, three accumulator
+tanks and the runner blade and GV serv. 
+
+![image](https://user-images.githubusercontent.com/29730122/156753094-fd51ba38-5e4f-453e-8d7d-60f9f758a7d9.png)
+
 
 ## Physics Guided ML
 
