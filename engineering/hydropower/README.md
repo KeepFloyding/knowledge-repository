@@ -25,8 +25,6 @@ Consistent development of hydro power systems requires highly sophisticated mode
 
 Great resource!
 
-* [Priority analysis for risk factors of equipment in a hydraulic turbine generator unit](https://www.sciencedirect.com/science/article/abs/pii/S0950423018305163)
-
 * [Multiaxial fatigue analysis for the shaft of a 100 MW hydro-power generator](https://journal.ump.edu.my/jmes/article/view/1533)
 
 * [A Methodology for Protective Vibration Monitoring of Hydropower Units Based on the Mechanical Properties](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3707184/)
