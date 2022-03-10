@@ -8,6 +8,10 @@ A repository of papers and resources for research and knowledge consolidation.
 * [Algorithms](#algorithms)
 * [Transfer Learning in Process Industry](#transfer-learning-in-process-industry)
 
+## To be read
+
+* [Rejection of Outliers](https://www.stat.cmu.edu/technometrics/59-69/VOL-02-02/v0202123.pdf)
+
 ## Physics Guided ML
 
 * [Review article on Physics-informed machine learning](https://www.nature.com/articles/s42254-021-00314-5.pdf).
