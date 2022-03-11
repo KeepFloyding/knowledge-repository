@@ -1,12 +1,16 @@
 # Knowledge Repository
 A repository of papers and resources for research and knowledge consolidation.
 
-* [Engineering](https://github.com/KeepFloyding/knowledge-repository/engineering)
+* [Engineering](https://github.com/KeepFloyding/knowledge-repository/tree/main/engineering/)
 * [Physics Guided ML](#physics-guided-ml)
 * [Data Set Generation](#data-set-generation)
 * [Simulation Based Inference](#simulation-based-inference)
 * [Algorithms](#algorithms)
 * [Transfer Learning in Process Industry](#transfer-learning-in-process-industry)
+
+## To be read
+
+* [Rejection of Outliers](https://www.stat.cmu.edu/technometrics/59-69/VOL-02-02/v0202123.pdf)
 
 ## Physics Guided ML
 
@@ -66,7 +70,8 @@ Approximate Bayesian computation (ABC) methods can be used to evaluate posterior
 
 * [Automatic Posterior Transformation for Likelihood-free Inference](https://arxiv.org/pdf/1905.07488.pdf)
 
-ABC methods for SBI can suffer from the curse of dimensionality when a large number of summary statistics are used to compute the distance function. Posterior Estimation methods can surpass this by targeting the posterior directly.
+ABC methods for SBI can suffer from the curse of dimensionality when a large number of summary statistics are used to compute the distance function. Posterior Estimation methods can surpass this by targeting the posterior directly. A recent approach is to learn the posterior from adaptively proposed simulations using neural network-based conditional density estimators. Classical approaches to such likelihood-free statistical inference (also known as Approximate Bayesian
+Computation (ABC), do not scale to high-dimensional applications, and typically rely on ad-hoc choices to design summary statistics and distance functions. Posterior density estimation approaches directly target the posterior p(θ|x) by training a density-estimation neural network from (simulated) data x to θ. This approach does not require additional inference procedures, and thus naturally amortizes inference. In addition, it leverages the ability of neural networks to learn informative features from data.
 
 ## Algorithms
 
