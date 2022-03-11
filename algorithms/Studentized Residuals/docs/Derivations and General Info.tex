@@ -1,0 +1,124 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=blue,
+	pdfpagemode=FullScreen,
+}
+
+\begin{document}
+	
+	
+\subsection{Equation Derivation}
+
+Let's say you have 2 dimensional data $x_i$, $y_i$ and you would like to do a linear prediction with parameters $\beta$ to get a $\hat{y_i}$. 
+
+\begin{equation}
+	\hat{y_i} = x\beta 
+\end{equation}
+
+Ordinary residuals can be calculated as the difference between the predicted and actual value. 
+
+\begin{equation}
+e_i = \hat{y_i} - y_i
+\end{equation}
+
+Residuals can be standardized in several different ways with a z-score or t-statistic but here we will look at Studentized residuals (a division of a residual by an estimate of its standard deviation). 
+
+\begin{equation}
+r_i = e_i/\sigma(e)
+\end{equation}
+
+The standard deviation of a residual can be determined with the leverage (diagonal of the hat matrix) and the SSE (sum of squared errors). 
+
+\begin{equation}
+	\sigma(e)=\sqrt{MSE(1-h_{ii})}
+\end{equation}
+
+Thus an internally Studentized residual can be calculated with the following equation
+
+\begin{equation}
+r_i = \frac{e_i}{\sqrt{MSE(1-h_{ii})}}
+\end{equation}
+
+In many cases, it is desired rather to compute the deleted Studentized residuals which are found by developing a regression prediction for each point $i$ that has that point discarded from the fitting data: 
+
+\begin{equation}
+d_i = \hat{y}_{i, d}- y_i
+\end{equation}
+
+where $d_i$ is a deleted residual and $\hat{y}_{i, d}$ is the prediction of point $i$ with that point removed. To Studentize these residuals (known as externally Studenized residuals), we can follow the same approach as before
+
+
+\begin{equation}
+t_i = d_i/\sigma(d)=\frac{d_i}{\sqrt{(MSE_i(1-h_{ii}))}}
+\end{equation}
+
+where $SSE_i$ is the sum of squared errors of all deleted residuals. As you can imagine, it can be a super big pain to have to refit your curve each time to determine what the deleted residuals are. Luckily there is a way to equate externally Studentized residuals with internal Studentized ones:
+
+\begin{equation}
+t_i = r_i \sqrt{\frac{n-p-1}{n-p-r_i^2}}
+\end{equation}
+
+This formula can then be rearranged to give the following equations
+
+\begin{gather*}
+t_i = r_i \sqrt{\frac{n-p-1}{n-p- \frac{e_i^2}{MSE(1-h_{ii})}}}\\
+t_i = r_i\sqrt{MSE(1-h_{ii})} \sqrt{\frac{n-p-1}{(n-p)MSE(1-h_{ii})- e_i^2}}\\
+t_i = e_i \sqrt{\frac{n-p-1}{(n-p)MSE(1-h_{ii})- e_i^2}}
+\end{gather*}
+
+Note that the MSE can be expressed in terms of the SSE. 
+
+\begin{equation}
+	MSE = \frac{SSE}{n-p}
+\end{equation}
+
+This will consequently lead to the following formula for deriving the Studentized deleted residuals in terms of the internally Studentized ones. 
+
+\begin{equation}
+	t_i = e_i \sqrt{\frac{n-p-1}{SSE(1-h_{ii})- e_i^2}}
+\end{equation}
+
+\subsection{References}
+\begin{itemize}
+	\item \href{https://www.stat.purdue.edu/~ghobbs/STAT\_512/Lecture\_Notes/Regression/Topic\_17.pdf}{Slides} on regression with above formula.
+	\item \href{https://www.youtube.com/watch?v=ZV6OfGgroc0}{YouTube} video on leverage and deleted residuals
+	\item \href{ttps://online.stat.psu.edu/stat501/lesson/11/11.4#:~:text=Studentized%20deleted%20residuals%20(or%20externally%20studentized%20residuals)&text=That%20is%2C%20a%20studentized%20deleted,standard%20deviation%20(first%20formula)}{Example} of a Studentized residuals in action		
+\end{itemize}
+
+
+\subsection{Nomenclature}
+	
+\begin{table}[h!]
+	\begin{center}
+
+		\begin{tabular}{l|l} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+			\textbf{Symbol} & \textbf{Meaning} \\
+			\hline
+			$\alpha$ & Significance value\\
+			$a_p$ & Coefficient p\\
+			$x_i$ & X Coordinate of data point i\\
+			$\hat{y_i}$ & Prediction of regression model for point i \\
+			$\hat{y_{i,d}}$ & Prediction of regression model for point i for data not including point i \\
+			$y_i$ & Sensor value at point i \\
+			$r_i$ & Ordinary residual at point i \\
+			$r_{i, d}$ & Deleted residual at point i \\
+			$N$ & Order of polynomial equation \\
+			$t_i$ & Deleted residual of point i \\
+			$n$ & Total number of data points \\
+			$p$ & Number of parameters (2 in this case) \\
+			$SSE$ & Sum of squared errors \\
+			$h_{i,i}$ & Diagonal i of Hat Matrix \\
+			$\sigma$ & Standard deviation \\
+			$H$ & Hat matrix \\
+			$X$ & Vector of all x values \\
+			$BC$ & Bonferroni Critical Value \\
+		\end{tabular}
+	\end{center}
+\end{table}
+\end{document}
