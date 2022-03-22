@@ -91,6 +91,23 @@ This will consequently lead to the following formula for deriving the Studentize
 	\item \href{ttps://online.stat.psu.edu/stat501/lesson/11/11.4#:~:text=Studentized%20deleted%20residuals%20(or%20externally%20studentized%20residuals)&text=That%20is%2C%20a%20studentized%20deleted,standard%20deviation%20(first%20formula)}{Example} of a Studentized residuals in action		
 \end{itemize}
 
+\subsection{Nomenclature}
+
+\begin{itemize}
+	\item CDF : Cumulative Distribution Function refers to the probability that a value (X) is less than or equal to a given value. e.g. P(X$\leq$=3) for example. It can be thought of as the integral of the PDF. 
+	\item PPF : Percent Point Function (also known as the quantile function) is defined as the inverse of the CDF, i.e. determining what the threshold value that a value will lie at or below a given threshold. e.g. X(P<0.95). 
+	\item PDF : Probability Density Function can be thought of as the derivative of the CDF and is simply the probability distribution itself. 
+	\item PMF: Probability Mass Function 
+\end{itemize}
+
+
+\subsection{Determining Cut-Off}
+
+Since the externally Studentized residuals follow a T-distribution with n-p-1 degrees of freedom, a critical T value can be determined using the PPF (or quantile function). For instance  \href{https://web.stanford.edu/class/stats191/notebooks/Diagnostics_for_multiple_regression.html}{here} they indeed they use the function \textbf{qt} which refers to the quantile function to compute the cut-off for identifying any outliers. 
+
+Similarly this critical value can be computed with a significance value that is adjusted with the \textbf{Bonferroni Correction} which is a way of controlling for Type I errors (i.e. false positives) by adjusting the significance value. The way that this is done is...
+
+Finally, we can compare our implementation for how it is done in R with \textbf{outlierTest}. 
 
 \subsection{Nomenclature}
 	
