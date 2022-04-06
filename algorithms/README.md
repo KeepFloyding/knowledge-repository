@@ -4,6 +4,8 @@
 
 * [Statistical Analysis of Simulation
 Results](https://books-library.net/files/books-library.online-07071846Zc7R0.pdf)
+* [Remove Initial Bias From Steady-State Stochastic
+Simulation](https://fenix.tecnico.ulisboa.pt/downloadFile/844820067126245/dissertacao%20corrigida%20Laura%20Barroso%2073943.pdf)
 
 ## Anomaly Detection
 * [Measurement of free surface deformation in PIV images](https://iopscience.iop.org/article/10.1088/0957-0233/16/10/012/meta)
