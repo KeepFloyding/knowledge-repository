@@ -5,7 +5,7 @@ A repository of papers and resources for research and knowledge consolidation.
 * [Physics Guided ML](#physics-guided-ml)
 * [Data Set Generation](#data-set-generation)
 * [Simulation Based Inference](#simulation-based-inference)
-* [Algorithms](#algorithms)
+* [Algorithms](https://github.com/KeepFloyding/knowledge-repository/tree/main/algorithms/)
 * [Transfer Learning in Process Industry](#transfer-learning-in-process-industry)
 
 ## To be read
@@ -72,33 +72,6 @@ Approximate Bayesian computation (ABC) methods can be used to evaluate posterior
 
 ABC methods for SBI can suffer from the curse of dimensionality when a large number of summary statistics are used to compute the distance function. Posterior Estimation methods can surpass this by targeting the posterior directly. A recent approach is to learn the posterior from adaptively proposed simulations using neural network-based conditional density estimators. Classical approaches to such likelihood-free statistical inference (also known as Approximate Bayesian
 Computation (ABC), do not scale to high-dimensional applications, and typically rely on ad-hoc choices to design summary statistics and distance functions. Posterior density estimation approaches directly target the posterior p(θ|x) by training a density-estimation neural network from (simulated) data x to θ. This approach does not require additional inference procedures, and thus naturally amortizes inference. In addition, it leverages the ability of neural networks to learn informative features from data.
-
-## Algorithms
-
-* [Measurement of free surface deformation in PIV images](https://iopscience.iop.org/article/10.1088/0957-0233/16/10/012/meta)
-
-A presentation of an anomaly detection algorithm that uses Studentized deleted residuals (from a polynomial regression curve) and the Bonferroni critical value to find outliers. Cool trick is presented that makes use of the projection matrix so as to avoid having to refit each data point. Algorithm is recreated on a test data set under algorithms/t-res-anomaly-detector.ipynb. 
-
-* [Online Steady-State Detection for Process Control Using Multiple Change-Point Models and Particle Filters](http://imse.utep.edu/mdasi/paper/paper4.pdf)
-
-We proposed a robust online steady-state detection algorithm using multiple change-point model and particle filtering techniques. The goal of this method is to sequentially fit a piecewise linear model to a given time series. Particle filtering is well-proven to be able to estimate the parameters of a nonlinear system effectively. Commonly applied to object localization and tracking, the power of the particle filter comes in its ability to model parameter distributions that are non-Gaussian in nature. There are multiple different methods that have been used historically described as the offline and online methods. 
-
-Offline methods include:
-* Graphical methods such as visual inspection, CUSUM, exponentially weighted moving average and statistical process control method (SPC) models. 
-* Heuristic rules such as MSER and MSER-5
-* Statistical methods such as goodness-of-fit test and wavelet-based spectral method. 
-* Initialization bias tests such as batch-means-based tests [9], students-tests and compound test method. 
-* Hybrid methods which employ initialization bias tests in conjunction with graphical or heuristic approaches. Two methods of this type are the sequential method and the scale invariant truncation point method.
-
-Online methods include:
-* Slope detection method
-* Performing a t-test on two recently computed means of two adjacent windows with pooled standard-deviation
-* Monitoring the standard deviation of a moving window
-* Performing an F-test on the ratio of variances of a moving window calculated using two different methods, the mean-squared-deviation and the mean of squared differences of successive data
-
-These existing methods have certain limitations. One common disadvantage is that a data window has to be used. Too long a moving window may delay the detection while too short a moving window may increase the false detection rate. Another disadvantage is that the optimal detection parameters (i.e., window size, threshold) often depend on the characteristics of signals
-
-Nice blog post about this can be found [here](https://medium.com/cognite/inso-insights-online-steady-state-detection-for-process-control-fae91567e560).
 
 ## Transfer Learning in Process Industry
 

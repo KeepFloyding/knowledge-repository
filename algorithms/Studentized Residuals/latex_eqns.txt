@@ -1,0 +1,3 @@
+t_i = \frac{r_{i,d}}{\sigma(r_{i,d})}=(n-p-1)\frac{r_i}{SSE(1-h_{ii})-r^2_i}
+
+
