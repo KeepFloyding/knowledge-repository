@@ -2,7 +2,7 @@
 
 * [Canonical Variate Dissimilarity Analysis for Process Incipient Fault Detection](https://ieeexplore.ieee.org/document/8304817)
 
-Generation of a simplified CSTR (Continuous Stirred Tank Reactor) model that creates a simulation based data set of normal operation and fault-induced anomalous operation. Model is subsequently used to test different multivariate statistical process monitoring methods. Model and paper results have been recreated here.
+Generation of a simplified CSTR (Continuous Stirred Tank Reactor) model that creates a simulation based data set of normal operation and fault-induced anomalous operation. Model is subsequently used to test different multivariate statistical process monitoring methods. Model and paper results have been recreated here. Model has been recreated in an open source framework in `cstr_model`. 
 
 * [A pulp mill benchmark problem for control: problem description](https://www.sciencedirect.com/science/article/pii/S0959152403000118?via%3Dihub)
 
